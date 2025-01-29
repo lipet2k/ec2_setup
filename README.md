@@ -45,3 +45,11 @@ location / {
 ```
 sudo systemctl start nginx.service
 ```
+11. Install `screen`
+```
+screen -S server
+```
+To reattach to screen
+```
+screen -r server
+``` 
