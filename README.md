@@ -20,4 +20,28 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 docker-compose version
 ```
+6. Install `git`
+```
+sudo yum install git -y
+```
 
+7. Create an SSH key and add it to GitHub
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+8. Install nginx
+```
+sudo amazon-linux-extras install nginx1
+```
+
+9. Edit `/etc/nginx/nginx.conf` (see link)[https://www.youtube.com/watch?v=WmdL8aOVooM]
+```
+location / {
+    proxy_pass http://localhost:5000;
+}
+```
+10. Enable nginx
+```
+sudo systemctl start nginx.service
+```
