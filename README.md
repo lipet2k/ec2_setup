@@ -35,7 +35,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 sudo amazon-linux-extras install nginx1
 ```
 
-9. Edit `/etc/nginx/nginx.conf` [see link](https://www.youtube.com/watch?v=WmdL8aOVooM)
+9. Edit `/etc/nginx/nginx.conf` [(See YouTube)](https://www.youtube.com/watch?v=WmdL8aOVooM)
 ```
 location / {
     proxy_pass http://localhost:5000;
