@@ -8,8 +8,6 @@ sudo yum update -y
 sudo yum install -y docker
 
 sudo service docker start
-
-sudo usermod -a -G docker ec2-user
 ```
 4. Log out and log back in
 5. Install docker-compose and use the test `docker-compose.yaml` file
